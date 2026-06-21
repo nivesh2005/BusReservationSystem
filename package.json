@@ -1,0 +1,17 @@
+{
+  "name": "bus-reservation-system",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install-all": "npm install --workspaces",
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "start-backend": "npm --prefix backend start",
+    "start-frontend": "npm --prefix frontend dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
